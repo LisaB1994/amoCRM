@@ -1,0 +1,14 @@
+.button {
+  @include text("Inter", 500, 16px, 19px, $font-color-main);
+  background-color: $color-button;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  padding: 21px 34px;
+  transition: all 200ms ease-in-out;
+
+  @media screen and (max-width: 425px) {
+    display: none;
+    visibility: hidden;
+  }
+}

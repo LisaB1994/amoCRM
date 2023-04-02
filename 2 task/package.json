@@ -1,0 +1,16 @@
+{
+  "name": "2-task",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx sass src/styles/components/index.scss dist/styles.css",
+    "postcss": "npx postcss src/styles/components/index.scss -o dist/style.min.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.60.0"
+  }
+}
