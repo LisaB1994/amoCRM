@@ -8,8 +8,8 @@
   box-sizing: border-box;
   border: none;
   cursor: pointer;
+  max-width: 262px;
   padding: 21px 34px;
-  transition: all 200ms ease-in-out;
 }
 @media screen and (max-width: 425px) {
   .button {
@@ -40,7 +40,7 @@
 
 .header {
   background-color: #1e1e1e;
-  padding-top: 46px;
+  padding-top: 57px;
   padding-bottom: 90px;
 }
 @media screen and (max-width: 425px) {
@@ -76,7 +76,10 @@
   }
 }
 @media screen and (max-width: 425px) {
-  .header__link, .header__phone-address, .header__social-network-wrapper, .header__discription {
+  .header__link,
+  .header__phone-address,
+  .header__social-network-wrapper,
+  .header__discription {
     display: none;
   }
 }
@@ -148,14 +151,18 @@
   margin-top: 10px;
 }
 
-.content__inner {
+.content {
   background-color: #1e1e1e;
   padding-bottom: 69px;
 }
 @media screen and (max-width: 425px) {
-  .content__inner {
+  .content {
     padding-top: 40px;
     padding-bottom: 59px;
+    background-image: url(../../../assets/images/noise.png);
+    mix-blend-mode: overlay;
+    background-size: auto;
+    background-position: center center;
   }
 }
 .content__wrapper {
@@ -234,6 +241,12 @@
 .content__content-conditions {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+}
+@media screen and (max-width: 425px) {
+  .content__content-conditions {
+    align-items: flex-start;
+  }
 }
 .content__content-conditions-title {
   margin: 0;
@@ -317,7 +330,7 @@
   right: 0;
   width: 10px;
   height: 1px;
-  background-color: white;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%);
   display: none;
 }
 @media screen and (max-width: 425px) {
@@ -405,7 +418,9 @@
     margin-bottom: 30px;
   }
 }
-.footer__navigation-company-list, .footer__navigation-menu-list, .footer__social-network-list {
+.footer__navigation-company-list,
+.footer__navigation-menu-list,
+.footer__social-network-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -419,7 +434,10 @@
   align-items: end;
   grid-template-rows: repeat(5, 19px);
 }
-.footer__navigation-company-item + .footer__navigation-company-item, .footer__navigation-company-item + .footer__navigation-menu-item, .footer__navigation-menu-item + .footer__navigation-company-item, .footer__navigation-menu-item + .footer__navigation-menu-item {
+.footer__navigation-company-item + .footer__navigation-company-item,
+.footer__navigation-company-item + .footer__navigation-menu-item,
+.footer__navigation-menu-item + .footer__navigation-company-item,
+.footer__navigation-menu-item + .footer__navigation-menu-item {
   padding-top: 10px;
 }
 .footer__contacts {
@@ -435,7 +453,8 @@
     align-items: flex-start;
   }
 }
-.footer__navigation-menu-title, .footer__contacts-title {
+.footer__navigation-menu-title,
+.footer__contacts-title {
   margin: 0;
   margin-bottom: 20px;
   font-family: "Inter", sans-serif;
@@ -447,7 +466,10 @@
   text-transform: uppercase;
   font-style: normal;
 }
-.footer__navigation-company-link, .footer__navigation-menu-link, .footer__link-phone-address, .footer__address-text {
+.footer__navigation-company-link,
+.footer__navigation-menu-link,
+.footer__link-phone-address,
+.footer__address-text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -456,7 +478,10 @@
   text-decoration: none;
 }
 @media screen and (max-width: 425px) {
-  .footer__navigation-company-link, .footer__navigation-menu-link, .footer__link-phone-address, .footer__address-text {
+  .footer__navigation-company-link,
+  .footer__navigation-menu-link,
+  .footer__link-phone-address,
+  .footer__address-text {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -522,7 +547,8 @@
     align-items: start;
   }
 }
-.footer__info-politics-text, .footer__info-politics-link {
+.footer__info-politics-text,
+.footer__info-politics-link {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -534,6 +560,124 @@
 }
 .footer__info-politics-link {
   text-decoration-line: underline;
+}
+
+.app-background {
+  max-width: 1140px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+.app-background__puple-ball {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 962px;
+  top: 4px;
+  border-radius: 50%;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(236, 208, 255, 0.64) 0%,
+    rgba(161, 93, 207, 0.24) 59.67%,
+    rgba(118, 49, 164, 0.208) 78.59%,
+    rgba(86, 24, 128, 0.232) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+  backdrop-filter: blur(2px);
+}
+@media screen and (max-width: 425px) {
+  .app-background__puple-ball {
+    width: 40px;
+    height: 40px;
+    left: 389px;
+    top: 311px;
+  }
+}
+.app-background__red-ball {
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  left: 612px;
+  top: 84px;
+  border-radius: 50%;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.536) 0%,
+    rgba(212, 93, 93, 0.264) 59.67%,
+    rgba(167, 49, 49, 0.248) 78.59%,
+    rgba(130, 25, 25, 0.248) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  backdrop-filter: blur(2px);
+}
+@media screen and (max-width: 425px) {
+  .app-background__red-ball {
+    display: none;
+    visibility: hidden;
+  }
+}
+.app-background__red-ball_small {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 948px;
+  top: 535px;
+  border-radius: 50%;
+  background: radial-gradient(
+    64% 64% at 27.25% 26.5%,
+    rgba(255, 208, 208, 0.48) 0%,
+    rgba(212, 93, 93, 0.248) 59.67%,
+    rgba(167, 49, 49, 0.264) 78.59%,
+    rgba(130, 25, 25, 0.232) 100%
+  );
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2.5px);
+  backdrop-filter: blur(2px);
+}
+@media screen and (max-width: 425px) {
+  .app-background__red-ball_small {
+    width: 43px;
+    height: 43px;
+    left: 24px;
+    top: 484px;
+  }
+}
+.app-background__puple-light {
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  left: 692px;
+  top: -154px;
+  border-radius: 50%;
+  background: #833ab4;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+@media screen and (max-width: 425px) {
+  .app-background__puple-light {
+    left: 250px;
+    top: 196px;
+  }
+}
+.app-background__red-light {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: -102px;
+  top: 251px;
+  border-radius: 50%;
+  background: #961a1a;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+@media screen and (max-width: 425px) {
+  .app-background__red-light {
+    width: 211px;
+    height: 211px;
+    left: -50px;
+    top: 313px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
