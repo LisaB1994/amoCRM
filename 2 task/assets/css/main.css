@@ -1,5 +1,5 @@
 @import "../fonts/fonts.css";
-@import "../../dist/styles.css";
+@import "../../dist/style.min.css";
 
 html,
 body {
@@ -12,8 +12,6 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 *,
