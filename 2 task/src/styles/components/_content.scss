@@ -4,7 +4,7 @@
 
   @media screen and (max-width: 425px) {
     @include pad(40px, 59px);
-    background-image: url(../assets/images/noise.png);
+    background-image: url(/assets/images/noise.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
