@@ -1,8 +1,0 @@
-.container {
-  @include container(1140px);
-  width: 100%;
-
-  @media screen and (max-width: 425px) {
-    padding: 0 16px;
-  }
-}
